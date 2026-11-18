@@ -8,7 +8,7 @@ Arguments (all optional):
     camera_type:=chameleon   camera family for the driver (default chameleon)
     serial:=16306023         camera serial number (default 16306023)
     roi:=746,176,621,520     x,y,width,height of the bead ROI (default: saved roi.yaml)
-    pixels_per_mm:=38.9     scale; default is the caliper reading (41.27 px/mm)
+    pixels_per_mm:=38.9     scale; default 38.9 px/mm, the ruler reading; the ruler in view overrides it
     show_ui:=true|false      OpenCV windows (default true)
 
 If the camera is already running in another terminal, stop it first or pass camera:=false.
