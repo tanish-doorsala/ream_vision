@@ -50,7 +50,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package="vision_processor",
+            package="ream_vision",
             executable="bead_width",
             name="bead_width",
             output="screen",
