@@ -8,7 +8,7 @@ Arguments (all optional):
     camera_type:=chameleon   camera family for the driver (default chameleon)
     serial:=16306023         camera serial number (default 16306023)
     roi:=746,176,621,520     x,y,width,height of the bead ROI (default: saved roi.yaml)
-    pixels_per_mm:=41.27     scale; default is the caliper reading (41.27 px/mm)
+    pixels_per_mm:=38.9     scale; default is the caliper reading (41.27 px/mm)
     show_ui:=true|false      OpenCV windows (default true)
 
 If the camera is already running in another terminal, stop it first or pass camera:=false.
@@ -36,7 +36,7 @@ def generate_launch_description():
         DeclareLaunchArgument("camera_type", default_value="chameleon"),
         DeclareLaunchArgument("serial", default_value="16306023"),
         DeclareLaunchArgument("roi", default_value="746,176,621,520"),
-        DeclareLaunchArgument("pixels_per_mm", default_value="41.27"),
+        DeclareLaunchArgument("pixels_per_mm", default_value="38.9"),
         DeclareLaunchArgument("show_ui", default_value="true"),
 
         IncludeLaunchDescription(
