@@ -2,10 +2,11 @@
 
 ROS 2 package for measuring bead width from the camera. `bead_width` measures the bead just below the nozzle and shows the result on screen, with the scale taken from the ruler in view. `roi_tuner` picks the region of interest with sliders, and `roi_grabber` writes the live camera frame to a file the tuner reads.
 
-Build from the repo root (this folder is the workspace; the package is in `src/ream_vision`):
+Clone into the workspace `src/` folder, then build from the workspace root:
 
 ```
-colcon build --packages-select ream_vision --symlink-install
+cd ~/ream2_ws/src && git clone git@github.com:tanish-doorsala/ream_vision.git
+cd ~/ream2_ws && colcon build --packages-select ream_vision --symlink-install
 source install/setup.bash
 ```
 
